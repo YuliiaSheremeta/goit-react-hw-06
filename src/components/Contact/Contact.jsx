@@ -1,13 +1,14 @@
 import { ImPhone,ImUser } from "react-icons/im";
+import css from './Contact.module.css';
 
 export default function Contact({ name, number, onRemove }) {
     return (
-        <div>
+        <div className={css.contactcard}>
             <div>
-                <p><ImUser/>{name}</p>
-                <p><ImPhone/>{number}</p>
+                <p> <ImUser/> {name}</p>
+                <p> <ImPhone/> {number}</p>
             </div>
-            <button type="button" onClick={onRemove}>Delete</button>
+            <button className={css.deletebutton} type="button" onClick={onRemove}>Delete</button>
         </div>
     );
  };
