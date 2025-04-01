@@ -17,7 +17,7 @@ const persistedUserContact = persistReducer(
     {
         key: 'user_contact',
         storage,
-        //whitelist :[contacts]
+        whitelist :['contacts']
     },
     contactsSlice
 );
